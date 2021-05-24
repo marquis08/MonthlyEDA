@@ -1,0 +1,42 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+EDA Page
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-white text-black">
+  <br><br><h1 class="text-center">Abengers EDA</h1><br> 
+  <br><hr><br>
+</div>
+
+<div style='text-align:center;'>
+<h2 class="text-center">Who's the strongest character?</h2><br>
+<h3 class="text-center">Distribution of Total Column</h3><br>
+<img src="{%static 'img/total_dist.png'%}" alt="total_dist.png"><br>
+<img src="{%static 'img/manhunter-table.png'%}" alt="manhunter-table.png"><br><br>
+<img src="{%static 'img/Martian Manhunter.jpg'%}" alt="Martian Manhunter.jpg" width='30%' height='30%' class="center"> 
+</div>
+<br><hr><br>
+<div style='text-align:center;'>
+<h2 class="text-center">Compare Good and Bad</h2><br>
+<img src="{%static 'img/Compare Distribution of Good and Bad characters.png'%}" alt="Martian Manhunter.jpg" width='60%' height='60%' class="center"> 
+</div>
+<br><hr><br>
+<div style='text-align:center;'>
+<h2 class="text-center">Compare Good, Bad, and Neutral</h2><br>
+<img src="{%static 'img/Compare Distribution of Good, Bad, and Neutral characters.png'%}" alt="Martian Manhunter.jpg" width='60%' height='60%' class="center"> 
+</div>
+<br><hr><br>
+<div style='text-align:center;'>
+<h2 class="text-center">Rare Cases of Publisher</h2><br>
+<img src="{%static 'img/rare-publisher.png'%}" alt="Martian Manhunter.jpg" width='60%' height='60%' class="center"> 
+</div>
+<br><hr><br>
+
+<!-- {% autoescape off %}
+{{ plot_div }}
+{% endautoescape %} -->
+
+{% endblock %}
+
