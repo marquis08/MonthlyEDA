@@ -1,0 +1,43 @@
+hr {
+    border-style: none;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #66bfbfa2;
+    border-width: 5px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 5%;
+    /* padding: 5%; */
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Kaushan Script', cursive;/*'Sacramento', cursive;*/
+    font-size: 5rem;
+    padding-top: 50px;
+    color: #66BFBF;
+    /* line-height: 2; */
+  }
+  
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+  }
+  
+  
+  .aligncenter {
+      text-align: center;
+  }
+  
+  .navbar-brand{
+    font-weight:bold;
+    color:#66BFBF;
+  }
+  
+  .nav-link{
+    font-weight:600;
+    color:#66BFBF;
+  }
+  
