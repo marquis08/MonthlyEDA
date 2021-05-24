@@ -24,11 +24,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # load_dotenv()
 # SECRET_KEY = str(os.getenv('SECRET_KEY'))
-secret_file = os.path.join(BASE_DIR, 'key.txt')
-with open(secret_file, "r") as f:
-    mykey = f.readlines()
-    
-SECRET_KEY = mykey
+# secret_file = os.path.join(BASE_DIR, 'key.txt')
+# with open(secret_file, "r") as f:
+#     mykey = f.readlines()
+import string
+import random
+
+# Get ascii Characters numbers and punctuation (minus quote characters as they could terminate string).
+chars = ''.join([string.ascii_letters, string.digits, string.punctuation]).replace('\'', '').replace('"', '').replace('\\', '')
+
+SECRET_KEY = ''.join([random.SystemRandom().choice(chars) for i in range(50)])
+
+# SECRET_KEY = mykey
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
